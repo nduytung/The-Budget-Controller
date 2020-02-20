@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget Controller</title>
+    <link rel='stylesheet' href='decorate.css'>
+</head>
+<body>
+    <div id='upper_part'> 
+        <div id='title'> Available Budget In This Month </div>
+        <div id='total_money'> 0.000.000 </div>
+        <div id='display'> 
+            <div id='total_income'> INCOME: 0.000.000</div>
+            <div id='total_expense'> EXPENSE: 0.000.000 </div>
+        </div>
+    </div>
+    
+    <div id='lower_part'> 
+        <div id='UI_bar'> 
+            <select id='choose'> 
+                <option value='inc' selected> + </option>
+                <option value='exp'> - </option>
+            </select>
+
+            <input id='description' type='text' placeholder="Add Description here">
+
+            <input id='value' type='text' placeholder="Value here">
+
+            <button id='confirm' type='button'> Confirm </button>
+        </div>
+
+    <div id='displayFlex'>
+        <div id='income'> 
+            <div class='list' id='blue'> INCOMES THIS MONTH: </div>
+            <div id ='incomeList'> 
+            <!--
+                        <div class="incomeItem" id="inc-0">
+                            <div class="item__description">Salary</div>
+                            <div class="right_clearfix">
+                                <div class="item__value">+ 2,100.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"> Delete </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="incomeItem" id="inc-1">
+                            <div class="item__description">Sold car</div>
+                            <div class="right_clearfix">
+                                <div class="item__value">+ 1,500.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"> Delete </button>
+                                </div>
+                            </div>
+                        </div>
+                    -->           
+            </div>
+        </div>
+
+        <div id='expense'> 
+            <div class='list' id='red'> EXPENSES THIS MONTH: </div>
+            <div id='expenseList'>
+                <!--
+                        <div class="expenseItem" id="exp-0">
+                            <div class="item__description">Apartment rent</div>
+                            <div class="right_clearfix">
+                                <div class="item__value">- 900.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"> Delete </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ExpenseItem" id="exp-1">
+                            <div class="item__description">Grocery shopping</div>
+                            <div class="right_clearfix">
+                                <div class="item__value">- 435.28</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"> Delete </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    -->
+            </div>
+        </div>
+    </div>
+    <script src='actions.js'></script>
+</body>
+</html>
